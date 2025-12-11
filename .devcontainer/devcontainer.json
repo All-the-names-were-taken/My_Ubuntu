@@ -1,0 +1,12 @@
+{
+  "name": "XFCE Desktop",
+  "image": "ubuntu:22.04",
+  "postCreateCommand": "bash .devcontainer/scripts/setup-xfce.sh",
+  "forwardPorts": [6080],
+  "portsAttributes": {
+    "6080": {
+      "label": "Desktop",
+      "onAutoForward": "notify"
+    }
+  }
+}
